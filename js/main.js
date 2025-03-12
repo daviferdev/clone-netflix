@@ -10,7 +10,6 @@ questionCards.forEach((question) => {
   const description = question.querySelector('.question__description');
 
   question.addEventListener('click', () => {
-    console.log(description.style.display);
 
     if (description.style.display === "" || description.style.display === "none") {
       description.style.display = 'block';
