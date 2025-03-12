@@ -1,0 +1,38 @@
+.login__footer {
+    color: $gray-login;
+    padding: 2rem 0 4rem 0;
+    .container {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        align-items: flex-start;
+        p {
+            a {
+                color: $gray-login;
+            }
+        }
+        .login__footer-infos {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            ul {
+                list-style: none;
+                li {
+                    margin-bottom: 1rem;
+                    a {
+                      color: $gray-login;
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        .login__footer-infos {
+            flex-direction: column;
+            gap: 1rem;
+        }
+      }
+    }
+}

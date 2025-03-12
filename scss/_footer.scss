@@ -1,0 +1,39 @@
+.rodape__container {
+    padding-bottom: 4rem;
+    .container {
+        color: $gray-login;
+        margin-top: 4rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2rem;
+        p {
+            a {
+                color: $gray-login;;
+            }
+        }
+        .rodape__infos {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            ul {
+                list-style: none;
+                li {
+                    margin-bottom: 1rem;
+                    a {
+                        color: $gray-login;
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width: 950px) {
+        .rodape__infos {
+            flex-direction: column;
+            ul {
+                margin-bottom: 1rem;
+            }
+        }
+    }
+}

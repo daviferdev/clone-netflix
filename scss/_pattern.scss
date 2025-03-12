@@ -1,0 +1,103 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+$red: #C11119;
+$white: #fff;
+$gray: #e6e6e6;
+$gray-footer: #5050509d;
+$border-gray: #232323;
+$dark-gray: #1a14146f;
+$gray-hover: #414141;
+$gray-login: #8c8c8c;
+$background: #000;
+$blue: #017ede;
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    min-height: 100vh;
+    background-color: $background;
+    color: $white;
+}
+
+.header__logo {
+    width: 100%;
+    max-width: 148px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1295px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+img {
+    display: block;
+    width: 100%;  
+}
+
+.btn {
+    width: 50%;
+    background: $red;
+    color: $white;
+    padding: 1rem 0;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-weight: bold;
+    
+}
+
+.btn:hover {
+    background: darken($red, 10%);
+}
+
+.btn-select {
+    padding: 8px 15px;
+    font-size: 1rem;
+}
+
+.input-select {
+  background: $dark-gray;;
+  padding: 5px 30px;
+  color: $white;
+  border-radius: 3px;
+  border: 1px solid $gray-login;
+}
+
+form {
+    margin-top: 10px;
+    label {
+        display: flex;
+        align-items: center;
+        gap: .5rem;
+    
+        .input {
+            width: 100%;
+            padding: 1rem 2rem;
+            background: $dark-gray;
+            color: $gray;
+            border-radius: 3px;
+            font-size: 18px;
+            border: 1px solid $gray-login;
+
+            &::placeholder {
+                color: $gray;
+            }
+        }
+    }
+}
+
+.text-center {
+    text-align: center;
+}
+
+.uppercase {
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+

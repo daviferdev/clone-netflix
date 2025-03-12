@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="../assets/imagens/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="../css/main.min.css" />
+    <title>Netflix</title>
+  </head>
+  <body>
+    <section class="login__container">
+      <header class="login__header">
+        <div class="container">
+          <img
+            class="header__logo"
+            src="../assets/imagens/logo-netflix.png"
+            alt="Logo da Netflix"
+          />
+        </div>
+      </header>
+
+      <div class="login__content">
+        <form class="login__form">
+          <h2>Entrar</h2>
+          <input
+            type="email"
+            name="email"
+            placeholder="Email ou número de telefone"
+            class="input-login"
+          />
+          <input
+            type="password"
+            name="password"
+            placeholder="Senha"
+            class="input-login"
+          />
+
+          <div class="login__form-btns">
+            <button class="btn-login btn-authorization">Entrar</button>
+            <span class="text-center uppercase">Ou</span>
+            <button class="btn-login code-acess">Usar um código de acesso</button>
+          </div>
+        
+          <p class="text-center">Esqueceu a senha?</p>
+          
+          <div class="header__form-info">
+            <div class="box-check">
+              <input type="checkbox" name="remember" id="remember" />
+              <label for="remember">Lembe-se de mim</label>
+            </div>
+            <p>Novo por aqui? <strong>Assine agora.</strong></p>
+            <span
+              >Esta página é protegida pelo Google reCAPTCHA para garatinr que
+              você não é um robô. <a href="#">Saiba mais</a></span
+            >
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <footer class="login__footer">
+      <div class="container">
+        <p>Dúvidas? Ligue para <a href="#">0800 591 2876</a></p>
+        <div class="login__footer-infos">
+          <ul>
+            <li><a href="#">Perguntas frequentes</a></li>
+            <li><a href="#">Relações com investidores</a></li>
+          </ul>
+          <ul>
+            <li><a href="#">Central de Ajuda</a></li>
+            <li><a href="#">Informações corporativas</a></li>
+          </ul>
+          <ul>
+            <li><a href="#">Termos de Uso</a></li>
+          </ul>
+          <ul>
+            <li><a href="#">Privacidade</a></li>
+          </ul>
+        </div>
+        <select name="language" class="input input-select">
+          <option value="prt">Portugês</option>
+          <option value="en">English</option>
+        </select>
+      </div>
+    </footer>
+
+    <script src="../js/login.js"></script>
+  </body>
+</html>

@@ -1,0 +1,201 @@
+@mixin btnConfig($bg-color, $font-color: $background) {
+    background: $bg-color;
+    display: flex;
+    color: $font-color;
+    justify-content: space-between;
+    align-items: center;
+    gap: .3rem;
+    padding: 1rem 4rem;
+    border: none;
+    font-weight: bold;
+    border-radius: 3px;
+    font-size: 1rem;
+    cursor: pointer;
+    img {
+        width: 24px;
+        height: 24px;
+    }
+
+    @media (max-width: 990px) {
+        padding: .5rem;
+        font-size: .9rem;
+    }
+
+    @media (max-width: 768px) {
+        padding: .4rem;
+        font-size: .7rem;
+    }
+}
+
+.movies__header {
+    background: url(../assets/imagens/filmes/banner1.png) no-repeat center center / cover;
+    background-attachment: fixed;
+    height: 80vh;
+    padding: 2rem;
+    .movies__header-items {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .movies__header-navigation {
+            display: flex;
+            align-items: center;
+            gap: 4rem;
+            .movies__header-list {
+                display: flex;
+                align-items: center;
+                gap: 2rem;
+                list-style: none;
+                li {
+                    a {
+                        text-decoration: none;
+                        color: $white;
+                        font-size: 1.1rem;
+                    }
+                }
+            }
+        }
+        .movies__header-config {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+    }
+
+    .movies__header-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 2rem;
+        padding: 4rem;
+
+        img {
+            width: 40%;
+            height: auto;
+        }
+
+        .movies__header-description {
+            width: 450px;
+            font-size: 1.1rem;
+        }
+
+        .movies__header-button {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+
+            .btn-play {
+                @include btnConfig($gray);
+            }
+
+            .btn-info {
+                @include btnConfig($dark-gray, $white);
+            }  
+        }
+    }
+
+    @media (max-width: 990px) {
+        height: 70vh;
+        .movies__header-items {
+            .movies__header-navigation {
+                gap: 2rem;
+                .header__logo {
+                    width: 20%;
+                }
+
+                .movies__header-list {
+                    gap: 1.5rem;
+                    li {
+                        a {
+                            font-size: 1rem;
+                        }
+                    }
+                }
+            }
+            }
+
+        .movies__header-config {
+            img {
+                width: 24px;
+                height: 24px;
+            }
+        }    
+
+        .movies__header-content {
+            padding: 4rem 0 0 0;
+            .movies__header-description {
+                font-size: 1rem;
+            }
+        }
+    }
+
+    @media (max-width: 768px) {
+        height: 50vh;
+        background-position: center;
+        .movies__header-items {
+            .movies__header-navigation {
+                .header__logo {
+                    width: 60%;
+                }
+                .movies__header-list {
+                    display: none;
+                }
+            }
+        }
+
+        .movies__header-content {
+            padding: 2rem 0 0 0;
+            img {
+                width: 60%;
+            }
+            .movies__header-description {
+                width: 100%;
+                font-size: .8rem;
+            }
+        }
+      
+    }
+}
+
+.movies__container {
+   display: flex;
+   flex-direction: column;
+   gap: 1rem;
+   margin-top: -55px;
+   padding: 1rem 4rem;
+    .movies__container-list {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        .my-list {
+            display: flex;
+            align-items: center;
+            gap: .5rem;
+            overflow: hidden;
+        }
+    }
+
+    @media (max-width: 990px) {
+        margin-top: -50px;
+        .movies__container-list {
+            h2 {
+                font-size: 1rem;
+            }
+            .my-list {
+                img {
+                    width: 35%;
+                }
+            }
+        }
+    }
+    @media (max-width: 768px) {
+        padding: 1rem 1rem;
+        .movies__container-list {
+            .my-list {
+                img {
+                    width: 50%;
+                }
+            }
+        }
+    }
+}
